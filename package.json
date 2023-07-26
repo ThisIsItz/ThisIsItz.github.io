@@ -1,6 +1,7 @@
 {
   "name": "my-portfolio",
   "version": "0.1.0",
+  "homepage": "https://ThisIsitz.github.io",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.8.0",

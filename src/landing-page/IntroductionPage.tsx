@@ -1,7 +1,7 @@
-import { Box, Button, Flex, Link, Text } from '@chakra-ui/react'
+import { Flex, Link, Text, keyframes } from '@chakra-ui/react'
 import React from 'react'
-import LinkedinIcon from '../icons/LinkedinIcon.tsx'
 import GithubIcon from '../icons/GithubIcon.tsx'
+import LinkedinIcon from '../icons/LinkedinIcon.tsx'
 import TwitterIcon from '../icons/TwiterIcon.tsx'
 
 const platforms = [
@@ -56,8 +56,9 @@ export default function IntroductionPage() {
               justifyContent="center"
               alignItems="center"
               _hover={{
-                bg: 'white',
-                svg: { fill: defaultColor, stroke: defaultColor }
+                bg: '#fff',
+                border: '2px solid white',
+                svg: { fill: defaultColor }
               }}
             >
               <Link href={platform.href} isExternal>

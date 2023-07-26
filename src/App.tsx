@@ -10,7 +10,7 @@ function App() {
       <Image src={laptopHands} h="100vh" w="100vw" position="absolute" />
       <Box
         background="black"
-        opacity="0.4"
+        opacity="0.5"
         h="100vh"
         w="100vw"
         position="absolute"

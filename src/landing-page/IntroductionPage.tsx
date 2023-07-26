@@ -1,12 +1,19 @@
-import { Flex, Text } from '@chakra-ui/react'
+import { Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 
 export default function IntroductionPage() {
   return (
-    <Flex flexDir="column" alignSelf="center" fontSize="45px">
+    <Flex
+      flexDir="column"
+      alignSelf="center"
+      fontSize="60px"
+      color="white"
+      zIndex="10"
+      fontWeight="600"
+    >
       <Flex>
         Hello, I'm
-        <Text ml="10px" fontWeight="600">
+        <Text color="#f2bb16" ml="10px">
           Itziar Urbieta.
         </Text>
       </Flex>

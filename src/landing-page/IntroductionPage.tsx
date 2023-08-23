@@ -48,23 +48,23 @@ export default function IntroductionPage() {
       >
         {platforms.map((platform) => {
           return (
-            <Flex
-              borderRadius="100px"
-              border={`2px solid ${defaultColor}`}
-              w="50px"
-              h="50px"
-              justifyContent="center"
-              alignItems="center"
-              _hover={{
-                bg: '#fff',
-                border: '2px solid white',
-                svg: { fill: defaultColor }
-              }}
-            >
-              <Link href={platform.href} isExternal>
+            <Link href={platform.href} isExternal>
+              <Flex
+                borderRadius="100px"
+                border={`2px solid ${defaultColor}`}
+                w="50px"
+                h="50px"
+                justifyContent="center"
+                alignItems="center"
+                _hover={{
+                  bg: '#fff',
+                  border: '2px solid white',
+                  svg: { fill: defaultColor }
+                }}
+              >
                 {platform.icon}
-              </Link>
-            </Flex>
+              </Flex>
+            </Link>
           )
         })}
       </Flex>

@@ -30,7 +30,7 @@ export default function IntroductionPage() {
       fontWeight="600"
       mt="-70px"
     >
-      <Flex mt="150px">
+      <Flex mt="100px">
         Hello, I'm
         <Text color={defaultColor} ml="10px">
           Itziar Urbieta.
@@ -58,26 +58,6 @@ export default function IntroductionPage() {
             </Box>
           )
         })}
-      </Flex>
-      <Flex marginTop="100px">
-        <Button
-          as="a"
-          background="transparent"
-          border={`3px solid ${defaultColor}`}
-          color="white"
-          w="fit-content"
-          fontSize="20px"
-          fontWeight="700"
-          margin="auto"
-          borderRadius="20px"
-          h="50px"
-          padding="20px 20px"
-          _hover={{ bg: 'white', color: defaultColor }}
-          letterSpacing={'1px'}
-          href="#my-projects"
-        >
-          View My Projects
-        </Button>
       </Flex>
     </Flex>
   )

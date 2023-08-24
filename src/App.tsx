@@ -19,7 +19,7 @@ function App() {
         />
         <IntroductionPage />
       </Flex>
-      <MyProjects />
+      {/* <MyProjects /> */}
     </Box>
   )
 }

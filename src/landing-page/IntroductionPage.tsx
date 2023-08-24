@@ -1,19 +1,19 @@
-import { Flex, Link, Text, keyframes } from '@chakra-ui/react'
+import { Box, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
-import GithubIcon from '../icons/GithubIcon.tsx'
-import LinkedinIcon from '../icons/LinkedinIcon.tsx'
-import TwitterIcon from '../icons/TwiterIcon.tsx'
 
 const platforms = [
   {
-    icon: <LinkedinIcon />,
+    name: 'linkedin',
     href: 'https://www.linkedin.com/in/itziarurbieta/'
   },
   {
-    icon: <GithubIcon />,
+    name: 'github',
     href: 'https://github.com/ThisIsItz'
   },
-  { icon: <TwitterIcon />, href: 'https://twitter.com/ItUnderTheSea' }
+  {
+    name: 'twitter',
+    href: 'https://twitter.com/ItUnderTheSea'
+  }
 ]
 
 const defaultColor = '#f2bb16'
@@ -24,6 +24,7 @@ export default function IntroductionPage() {
       flexDir="column"
       alignSelf="center"
       fontSize="60px"
+      p="60px"
       color="white"
       zIndex="10"
       fontWeight="600"
@@ -45,26 +46,21 @@ export default function IntroductionPage() {
         mr="auto"
         left="0"
         right="0"
+        className="hi-icon-effect-1 hi-icon-effect-1a"
       >
         {platforms.map((platform) => {
           return (
-            <Link href={platform.href} isExternal>
-              <Flex
-                borderRadius="100px"
-                border={`2px solid ${defaultColor}`}
-                w="50px"
-                h="50px"
-                justifyContent="center"
-                alignItems="center"
-                _hover={{
-                  bg: '#fff',
-                  border: '2px solid white',
-                  svg: { fill: defaultColor }
-                }}
-              >
-                {platform.icon}
-              </Flex>
-            </Link>
+            <Box
+              as="a"
+              href="#"
+              _hover={{
+                bg: 'rgba(255,255,255,1)',
+                color: 'red' || '#41ab6b' // Define custom hover color if needed
+              }}
+              className={`hi-icon hi-icon-${platform.name}`}
+            >
+              {platform.name}
+            </Box>
           )
         })}
       </Flex>

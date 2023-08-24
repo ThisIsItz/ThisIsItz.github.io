@@ -1,9 +1,4 @@
-import { Icon } from '@chakra-ui/react'
-import React from 'react'
-
-export default function LinkedinIcon() {
-  return (
-    <svg
+   <svg
       fill="#ffffff"
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
@@ -24,5 +19,3 @@ export default function LinkedinIcon() {
         </g>
       </g>
     </svg>
-  )
-}

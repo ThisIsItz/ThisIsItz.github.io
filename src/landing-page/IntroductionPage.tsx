@@ -59,6 +59,26 @@ export default function IntroductionPage() {
           )
         })}
       </Flex>
+      <Flex marginTop="100px">
+        <Button
+          as="a"
+          background="transparent"
+          border={`3px solid ${defaultColor}`}
+          color="white"
+          w="fit-content"
+          fontSize="20px"
+          fontWeight="700"
+          margin="auto"
+          borderRadius="20px"
+          h="50px"
+          padding="20px 20px"
+          _hover={{ bg: 'white', color: defaultColor }}
+          letterSpacing={'1px'}
+          href="#my-projects"
+        >
+          View My Projects
+        </Button>
+      </Flex>
     </Flex>
   )
 }

@@ -1,4 +1,4 @@
-import { Box, Flex, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Text } from '@chakra-ui/react'
 import React from 'react'
 
 const platforms = [
@@ -30,7 +30,7 @@ export default function IntroductionPage() {
       fontWeight="600"
       mt="-70px"
     >
-      <Flex>
+      <Flex mt="150px">
         Hello, I'm
         <Text color={defaultColor} ml="10px">
           Itziar Urbieta.
@@ -40,8 +40,6 @@ export default function IntroductionPage() {
       <Flex
         gap="20px"
         justifyContent="center"
-        position="absolute"
-        bottom="100px"
         ml="auto"
         mr="auto"
         left="0"
@@ -52,12 +50,9 @@ export default function IntroductionPage() {
           return (
             <Box
               as="a"
-              href="#"
-              _hover={{
-                bg: 'rgba(255,255,255,1)',
-                color: 'red' || '#41ab6b' // Define custom hover color if needed
-              }}
+              href={platform.href}
               className={`hi-icon hi-icon-${platform.name}`}
+              target="_blank"
             >
               {platform.name}
             </Box>
